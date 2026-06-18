@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mealstack - Privacy Policy</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: rgba(17, 24, 39, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent-color: #00e5ff;
+      --accent-gradient: linear-gradient(135deg, #00e5ff 0%, #0084ff 100%);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-faint: #4b5563;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(0, 229, 255, 0.08) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 132, 255, 0.08) 0, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    /* Substrate Grid Overlay (Matches App Vibe) */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-gradient);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    }
+
+    .logo-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: #0b0f19;
+    }
+
+    .logo-text {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .summary-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .summary-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .summary-item-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .summary-item-desc {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    ul {
+      list-style-position: inside;
+      margin-left: 8px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background: rgba(0, 229, 255, 0.04);
+      border-left: 4px solid var(--accent-color);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 8px 0;
+    }
+
+    .highlight-box p {
+      color: var(--text-main);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-faint);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      .policy-card {
+        padding: 24px;
+      }
+      .summary-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+        </svg>
+      </div>
+      <span class="logo-text">Mealstack</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta-info">Effective Date: June 18, 2026</div>
+  </header>
+
+  <main>
+    <div class="summary-card">
+      <div class="summary-item">
+        <span class="summary-item-title">Data Storage</span>
+        <span class="summary-item-desc">100% On-Device</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">User Accounts</span>
+        <span class="summary-item-desc">None Required</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">Tracking / Telemetry</span>
+        <span class="summary-item-desc">Zero Collected</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">Cloud Servers</span>
+        <span class="summary-item-desc">None Used</span>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <section>
+        <h2>1. Executive Summary</h2>
+        <p>Mealstack is built from the ground up with a strict <strong>offline-first</strong> architecture. We believe that your health, workout, and nutrition data is deeply personal and should remain entirely under your control. We do not require accounts, we do not log your information on any servers, and we collect no analytics.</p>
+      </section>
+
+      <section>
+        <h2>2. Data Collection and Usage</h2>
+        <p>All data you enter into the application is stored directly in a sandboxed SQLite database on your mobile device. This includes:</p>
+        <ul>
+          <li><strong>Workouts & Exercises:</strong> Sets, repetitions, weights, and Rate of Perceived Exertion (RPE).</li>
+          <li><strong>Nutrition logs:</strong> Logged food items, quantities, recipes, and daily macro/fiber intake goals.</li>
+          <li><strong>Body Metrics:</strong> Scale weigh-in history and girth measurements (arms, waist, chest, etc.).</li>
+        </ul>
+        <div class="highlight-box">
+          <p>We cannot access, read, edit, or delete any of this data. It never leaves your phone unless you manually choose to export a backup.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Voice Logging and Speech Processing</h2>
+        <p>Mealstack includes a voice logging feature to let you log workouts and meals hands-free. This operates under strict privacy guardrails:</p>
+        <ul>
+          <li><strong>Local Processing:</strong> By default, speech is transcribed locally using your device's built-in on-device transcription engine.</li>
+          <li><strong>Network Fallback:</strong> If on-device transcription is unavailable, the app will request to use your operating system's network-based speech recognition (provided by Google on Android or Apple on iOS). The app displays a notification alert before falling back to network transcription.</li>
+          <li><strong>No Audio Storage:</strong> We never record, upload, or store your voice audio files on any servers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Device Permissions</h2>
+        <p>To deliver its core features, the app may request specific system permissions:</p>
+        <ul>
+          <li><strong>Microphone:</strong> Used only when you tap the voice logger to dictate workout or meal data.</li>
+          <li><strong>Notifications:</strong> Used only to show rest-timer notifications and manage active sessions in the background.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Backups & Data Portability</h2>
+        <p>Because all data is on-device, backing up your data is under your absolute control:</p>
+        <ul>
+          <li><strong>JSON Exports:</strong> You can export a plain JSON backup at any time from <strong>Settings > Data & backup</strong>. You choose where to save this file (e.g., local file system, personal Google Drive, or iCloud).</li>
+          <li><strong>Permanent Deletion:</strong> You can clear your entire database or delete individual sections granularly inside the app settings. Wiping your data leaves no trace of it anywhere.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Third-Party Services</h2>
+        <p>Mealstack contains no third-party advertisements, no SDKs from advertising networks, and no analytics software (such as Firebase Analytics or Mixpanel). Your app usage remains completely anonymous.</p>
+      </section>
+
+      <section>
+        <h2>7. Contact</h2>
+        <p>If you have questions, feedback, or concerns regarding your privacy while using Mealstack, please open an issue in our GitHub repository.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Mealstack &copy; 2026. Made with privacy in mind. <a href="https://github.com/QuantumMonkey/mealstack" target="_blank">View GitHub Repo</a></p>
+  </footer>
+
+</body>
+</html>
