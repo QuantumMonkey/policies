@@ -1,6 +1,6 @@
 # Policies
 
-A centralized repository containing all public-facing privacy policies and terms of service documents for **QuantumMonkey** applications.
+A centralized repository containing all public-facing privacy policies and terms of service documents for **Anubis Labs** applications.
 
 ## Projects Hosted
 
@@ -16,4 +16,4 @@ https://quantummonkey.github.io/policies/<project-name>/
 ```
 
 ---
-*Created and maintained by QuantumMonkey.*
+*Created and maintained by Anubis Labs.*
