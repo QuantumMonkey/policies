@@ -64,7 +64,7 @@
       position: relative;
       z-index: 1;
       width: 100%;
-      max-width: 900px;
+      max-width: 1040px;
       text-align: center;
       margin-bottom: 50px;
     }
@@ -120,12 +120,13 @@
       position: relative;
       z-index: 1;
       width: 100%;
-      max-width: 900px;
+      max-width: 1040px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+      justify-content: center;
       gap: 24px;
       margin-bottom: 40px;
     }
@@ -242,7 +243,7 @@
       position: relative;
       z-index: 1;
       width: 100%;
-      max-width: 900px;
+      max-width: 1040px;
       text-align: center;
       margin-top: 60px;
       color: var(--text-faint);
