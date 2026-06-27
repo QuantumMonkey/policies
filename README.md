@@ -1,11 +1,11 @@
 # Policies
 
-A centralized repository containing all public-facing privacy policies and terms of service documents for **Anubis Labs** applications.
+A centralized repository containing all public-facing privacy policies and terms of service documents for **Anubis Lab** applications.
 
 ## Projects Hosted
 
-* **Mealstack**: An offline-first training and nutrition tracker.
-  * Privacy Policy: [https://quantummonkey.github.io/policies/mealstack/privacy.html](https://quantummonkey.github.io/policies/mealstack/privacy.html)
+* **Loadout**: An offline-first training and nutrition tracker.
+  * Privacy Policy: [https://quantummonkey.github.io/policies/loadout/privacy.html](https://quantummonkey.github.io/policies/loadout/privacy.html)
 
 ## Publishing and Pages
 
@@ -16,4 +16,4 @@ https://quantummonkey.github.io/policies/<project-name>/
 ```
 
 ---
-*Created and maintained by Anubis Labs.*
+*Created and maintained by Anubis Lab.*
