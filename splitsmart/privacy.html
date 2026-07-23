@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SplitSmart - Privacy Policy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0c1a2e;
+      --card-bg: rgba(15, 30, 50, 0.72);
+      --card-border: rgba(14, 165, 233, 0.16);
+      --accent-color: #0ea5e9;
+      --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+      --text-main: #f3f4f6;
+      --text-muted: #94a3b8;
+      --text-faint: #475569;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image:
+        radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.10) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(2, 132, 199, 0.10) 0, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-gradient);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.35);
+    }
+
+    .logo-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: #0c1a2e;
+    }
+
+    .logo-text {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: var(--text-main); }
+
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    main { position: relative; z-index: 1; width: 100%; max-width: 800px; }
+
+    .summary-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .summary-item { display: flex; flex-direction: column; gap: 8px; }
+    .summary-item-title { font-size: 0.85rem; font-weight: 700; color: var(--accent-color); text-transform: uppercase; letter-spacing: 1px; }
+    .summary-item-desc { font-size: 0.95rem; color: var(--text-main); font-weight: 600; }
+
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    section { display: flex; flex-direction: column; gap: 12px; }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 8px;
+    }
+
+    p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.65; }
+
+    ul {
+      list-style-position: inside;
+      margin-left: 8px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li strong { color: var(--text-main); }
+
+    .highlight-box {
+      background: rgba(14, 165, 233, 0.06);
+      border-left: 4px solid var(--accent-color);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 8px 0;
+    }
+
+    .highlight-box p { color: var(--text-main); font-size: 1rem; font-weight: 600; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-faint);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-muted); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+    footer a:hover { color: var(--accent-color); }
+
+    @media (max-width: 600px) {
+      body { padding: 20px 10px; }
+      .policy-card { padding: 24px; }
+      .summary-card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon">
+        <!-- Brand Mark: a circle split in two -->
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path d="M512 96a416 416 0 1 0 0 832V96z" />
+          <path d="M512 96a416 416 0 1 1 0 832 416 416 0 0 1-42-2.1 40 40 0 0 1 8.4-79.6c11 1.2 22.3 1.7 33.6 1.7a336 336 0 0 0 0-672c-11.3 0-22.6 0.5-33.6 1.7a40 40 0 0 1-8.4-79.6A416 416 0 0 1 512 96z" />
+        </svg>
+      </div>
+      <span class="logo-text">SplitSmart</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta-info">Effective Date: July 23, 2026</div>
+  </header>
+
+  <main>
+    <div class="summary-card">
+      <div class="summary-item">
+        <span class="summary-item-title">Financial Data Storage</span>
+        <span class="summary-item-desc">100% On-Device</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">User Accounts</span>
+        <span class="summary-item-desc">None Required</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">Ads / Analytics</span>
+        <span class="summary-item-desc">Zero, None</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-item-title">Cloud Servers</span>
+        <span class="summary-item-desc">None Operated by Us</span>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <section>
+        <h2>1. Executive Summary</h2>
+        <p>SplitSmart is built on a single principle: your financial data belongs to you, and only you. We do not have servers, we do not have user accounts, and we do not sell information. All your groups, expenses, receipts, and settlements are stored exclusively in a local database on your device. What happens on your phone, stays on your phone unless you deliberately choose to share it.</p>
+      </section>
+
+      <section>
+        <h2>2. Data You Store in SplitSmart</h2>
+        <p>All records you enter are stored directly in a local database on your device. This includes:</p>
+        <ul>
+          <li><strong>Your "Me" profile:</strong> the name, phone number, and optional photo you set up for yourself.</li>
+          <li><strong>Group members:</strong> names, phone numbers, and optional photos for people you add, either typed manually or imported from your device contacts.</li>
+          <li><strong>Expenses and receipts:</strong> titles, amounts, line items, receipt photos, and how you split them.</li>
+          <li><strong>Settlements:</strong> records of who paid whom and when, carrying a tamper-evident signature.</li>
+        </ul>
+        <div class="highlight-box">
+          <p>We cannot access, read, edit, or delete any of this data. It never leaves your phone unless you export a backup or deliberately send a reminder or settlement message.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. On-Device Receipt Scanning (OCR)</h2>
+        <p>SplitSmart's receipt scanner is built on Google's ML Kit and runs <strong>entirely on your device</strong>. It needs a one-time internet connection, via Google Play Services, to download its text-recognition model the first time you scan a receipt. Outside of that one-time download, SplitSmart makes no network requests of its own -- no analytics, no sync, no telemetry.</p>
+      </section>
+
+      <section>
+        <h2>4. When Data Leaves Your Device</h2>
+        <p>SplitSmart has no server to send data to, so the only ways information ever leaves your device are actions you take yourself:</p>
+        <ul>
+          <li><strong>WhatsApp:</strong> tapping "WhatsApp" on a reminder or settlement opens a pre-filled link in the WhatsApp app, containing the recipient's phone number and your message. That handoff is the only time a phone number leaves SplitSmart, and it only happens when you tap that button. From there, WhatsApp's own privacy policy applies.</li>
+          <li><strong>Share sheet:</strong> tapping "Share" hands the same kind of message to your phone's native share menu, so you can send it through whichever app you choose.</li>
+          <li><strong>Contact Developer:</strong> an entirely optional, user-initiated email (see Section 6).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Device Permissions</h2>
+        <p>To deliver its core features, the app may request specific system permissions:</p>
+        <ul>
+          <li><strong>Contacts (optional):</strong> used only to let you pick a name and phone number when adding a group member. Read locally, never transmitted.</li>
+          <li><strong>Camera / Photos:</strong> used for scanning receipts and for optionally picking a profile photo. Images are processed on your device.</li>
+          <li><strong>Notifications and exact alarms:</strong> used only to schedule the optional local reminders (Settlement Reminder, Expense Nudge) you turn on in Settings. Generated entirely on-device; nothing is pushed from a server.</li>
+          <li><strong>Biometric:</strong> used only for the optional app lock. Your fingerprint or face data is handled entirely by your phone's operating system -- SplitSmart never sees or stores it.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Contact Developer Feature</h2>
+        <p>Settings includes an optional "Contact Developer" form. It only sends data when you explicitly tap Send Email, and only the technical details you individually check a box for (e.g. app version, Android SDK level, local performance metrics). It never includes your expenses, contacts, phone numbers, or financial data.</p>
+      </section>
+
+      <section>
+        <h2>7. Third-Party Services</h2>
+        <p>SplitSmart contains no third-party advertisements, no advertising-network SDKs, and no analytics software. The only third parties it ever talks to are WhatsApp (Section 4, only when you tap it) and Google ML Kit / Play Services (Section 3, for on-device OCR only). Your usage remains anonymous to us.</p>
+      </section>
+
+      <section>
+        <h2>8. Security</h2>
+        <ul>
+          <li><strong>Backup encryption:</strong> if you choose to create a backup, it is encrypted using a key derived from your specific device, so a backup file is unreadable without your phone.</li>
+          <li><strong>Biometric lock:</strong> you can optionally lock the app with your fingerprint or face ID.</li>
+          <li><strong>Tamper-evident settlements:</strong> recorded settlements carry a cryptographic signature so they cannot be silently altered after the fact.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Children</h2>
+        <p>SplitSmart is not directed at children and we do not knowingly collect information from anyone under 13.</p>
+      </section>
+
+      <section>
+        <h2>10. Changes and Contact</h2>
+        <p>If this policy changes, the updated version will be posted at this URL with a revised effective date. For privacy questions, feedback, or concerns, email us at <strong>supportanubis@gmail.com</strong>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>SplitSmart by Anubis Lab &copy; 2026. Built privacy-first. <a href="https://github.com/QuantumMonkey/splitsmart" target="_blank" rel="noopener">View GitHub Repo</a></p>
+  </footer>
+
+</body>
+</html>
