@@ -6,6 +6,8 @@ A centralized repository containing all public-facing privacy policies and terms
 
 * **Loadout**: An offline-first training and nutrition tracker.
   * Privacy Policy: [https://quantummonkey.github.io/policies/loadout/privacy.html](https://quantummonkey.github.io/policies/loadout/privacy.html)
+* **SplitSmart**: A local-first expense splitter with WhatsApp settlement delivery.
+  * Privacy Policy: [https://quantummonkey.github.io/policies/splitsmart/privacy.html](https://quantummonkey.github.io/policies/splitsmart/privacy.html)
 
 ## Publishing and Pages
 
